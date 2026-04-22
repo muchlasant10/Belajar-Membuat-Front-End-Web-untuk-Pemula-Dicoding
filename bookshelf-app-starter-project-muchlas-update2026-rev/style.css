@@ -1,0 +1,323 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+  
+header {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;    
+}
+
+h1 {
+  padding: 15px 0;
+}
+  
+main {    
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;    
+}  
+
+  
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+/*
+  ======= Input Section =======
+*/
+
+.input_section {
+  background-color: #f9fbc3;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+  
+}
+
+.input_section > form > .input > label {
+  color: #006400;
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.input_section > form > .input_selesai {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_selesai > label {
+  color: #006400;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.input_section > form > button {    
+  display: block;
+  width: 100%;
+  padding: 8px; 
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+/*
+  ======= Search Section =======
+*/
+.search_section {
+  background-color: #00BFFF;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/*
+  ======= Bookshelf Section =======
+*/
+
+.bookshelf {
+  margin: 16px 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.bookshelf > h2{
+  text-align: left;
+  margin: 8px 0 28px;
+}
+
+.bookshelf.incomplete {
+  background-color: #f9fbc3;
+}
+
+.bookshelf.complete {
+  background-color:#90EE90;
+}
+
+/*
+  ======= Book List and Book Item =======
+*/
+
+.book_list{  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  
+  border-radius: 10px;
+}
+
+.book_item {
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 5px;    
+}
+
+.book_item.i{
+  background-color:#90EE90;
+}
+
+.book_item.c{
+  background-color: #f9fbc3;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  margin: 0px 0 20px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0 0 5px;
+}
+
+/*
+  ======= Button =======
+*/
+
+button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  font-size: medium;
+  transition: 0.3s;
+}
+
+.main_btn{
+  background: linear-gradient(#98fb98, #90ee90, #32CD32);
+}
+
+.main_btn:hover{
+  background: linear-gradient(#32CD32, #32CD32);
+  transform: scale(1.01);   
+}
+
+/*
+  ======= Button List =======
+*/
+
+.btn-search{
+  background: linear-gradient(#98fb98, #90ee90, #32CD32);
+  font-weight: bold;
+}
+.btn-search:hover{
+  background: linear-gradient(#32CD32, #32CD32);
+  transform: scale(1.03);   
+}
+
+.button_list{
+  background-color: black ;
+  gap: 8px;
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0 0;
+}
+  
+.btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn.complete, .btn.incomplete:hover{
+  background: linear-gradient(#f9fbc3, #FFF9A1, #FCE54D);
+  color: black;
+}
+
+.btn.incomplete, .btn.complete:hover {
+  background: linear-gradient(#90EE90, #90EE90, #32CD32, #388E3C);
+  color: black;
+}
+
+.btn.complete:hover, .btn.incomplete:hover{
+  transform: scale(1.03);
+}
+.btn.edit {
+  background: linear-gradient(#87CEEB,#00BFFF, #1E90FF, #007bff, #0056b3);
+}
+
+.btn.edit:hover {    
+  background: linear-gradient(#007bff, #007bff);
+  transform: scale(1.05);
+}
+
+.btn.delete{ 
+  background: linear-gradient( #FA8072, red);
+}
+
+.btn.delete:hover{
+  background: linear-gradient(red, red);
+  transform: scale(1.05);
+}
+
+.btn-confirm:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+}
+
+.btn-cancel:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+.btn-confirm, .btn-cancel{
+  font-weight: bold;
+  transition: 0.3s;  
+}
+
+#cancelEditButton {
+  background: linear-gradient( #FA8072, red);
+  margin-top: 12px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+#cancelEditButton:hover {
+  background: linear-gradient(red, red);
+  transform: scale(1.01); 
+}
+
+#scrollTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0; /* transparan */
+  pointer-events: none; /* tidak bisa diklik */
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+#scrollTopButton:hover {
+  background-color: #2563eb;
+  transform: scale(1.1);
+}
